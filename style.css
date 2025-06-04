@@ -1,0 +1,281 @@
+body {
+    background-color: #f6f8ff;
+    color: #2b3442;
+    font-family: "Space Mono";
+    padding-bottom: 100px;
+}
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 470px;
+    padding-top: 100px;
+}
+
+header h1 {
+    margin-bottom: 150px;
+    
+}
+
+#ensemble_dark {
+    display: flex;
+}
+
+#ensemble_dark p {
+    color: #697c9a;
+    font-weight: bold;
+}
+
+#ensemble_dark p:hover {
+    color: #141d2f;
+    cursor: pointer;
+}
+
+
+
+input {
+    background-color:#fefefe;
+    color: #2b3442;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    margin-top: 6px;
+    font-family: "Space Mono";
+}
+
+input::placeholder {
+    font-family: "Space Mono";
+}
+
+#erreur {
+    color: red;
+     display: none;
+      margin-left: 10px;
+       font-weight: bold;
+}
+
+#recherche {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fefefe;
+    border-color: #fefefe;
+    border-radius: 10px;
+    margin-left: 275px;
+    margin-right:275px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+button {
+    background-color: #0079ff;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Space Mono";
+    border: none;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#lune {
+    width: auto;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 15px;
+    
+}
+
+#loupe {
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+#total {
+    margin-top: 20px;
+    background-color: #fefefe;
+    border-color: #fefefe;
+    border-radius: 10px;
+    margin-left: 275px;
+    margin-right:275px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#profil {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#pdp {
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#pseudo {
+    margin-right: 20px;
+}
+
+#profil #pseudo p {
+    color: #0079ff;
+}
+
+#profil #pseudo #bio {
+    color: #697c9a;
+}
+
+#profil p{
+    margin-right: 20px;
+    color: #697c9a;
+}
+#bio {
+    color: #2B3442;
+}
+#suivis {
+    margin-left: 170px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #f6f8ff;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+#suivis p {
+    color: #697c9a;
+}
+
+#lien {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    color: #4b6a9b;
+}
+
+#lien #icones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#lien img{
+    width: 25px;
+    height: auto;
+}
+
+#lien p {
+    margin-left: 20px;
+}
+
+#lien #p_twt {
+    color: #697c9a;
+}
+
+#lien #milieu {
+    margin-right: 40px;
+}
+
+#lien #maps, #lien #twitter {
+    margin-top: 10px;
+
+}
+#lien #maps {
+    height: auto;
+    width: 20px;
+}
+#lien a {
+    margin-right: 40px;
+    margin-left: 20px;
+    color: #4b6a9b;
+    text-decoration: none;
+}
+
+#lien a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+
+        padding-top: 50px;
+    }
+
+    header h1 {
+        
+        font-size: 1.5rem;
+    }
+
+    #recherche {
+        margin: 20px;
+        flex-direction: row; 
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        
+    }
+
+    input {
+        margin-bottom: 10px;
+
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    #total {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+ 
+
+    #suivis {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px ;
+        width: 100%;
+    }
+
+    #lien {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #lien #icones {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+
+    #pdp {
+        height: 80px;
+    }
+}

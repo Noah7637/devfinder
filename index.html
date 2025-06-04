@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link id="style" href="style.css" rel="stylesheet">
+    <title>devfinder</title>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>devfinder</h1>
+        <div id="ensemble_dark">
+        <p>DARK</p>  <img src="img/lune.png" id="lune">
+        </div>
+    </header>
+    <main>
+        <div id="recherche">
+            <img src="img/loupe.png" id="loupe">
+            <form>
+                <input type="text" size="65" placeholder="Search GitHub username..." required>
+                <p id="erreur">Utilisateur introuvable</p>
+            </form>
+            <button>Search</button>
+        </div>
+        <div id="total">
+            <div id="profil">
+                <div>
+                    <img src="img/pdp.png" id="pdp">
+                </div>
+                <div id="pseudo">
+                    <h2>Octocat</h2>
+                    <p>@octocat</p>
+                    <p id="bio">This profile has no bio</p> 
+                </div>
+                <p id="join">Joined 25 jan 2011</p>
+            </div>
+                
+                <div id="suivis">
+                    <div id="repos">
+                        <p>Repos</p> <h2>8</h2>
+                    </div>
+                    <div id="followers">
+                        <p>Followers</p> <h2>3938</h2>
+                    </div>
+                    <div id="following">
+                        <p>Following</p> <h2>9</h2>
+                    </div>
+                </div>
+
+                <div id="lien">
+                    <div id="icones">
+                        <img src="img/maps.png" id="maps"> 
+                        <img src="img/link.png" id="link"> 
+                    </div>
+                    <div id="milieu">
+                        <p>San Fransisco</p>
+                        <a href="https://github.blog" target="_blank">https://github.blog</a>
+                    </div>
+                    <div id="icones">
+                        <img src="img/twitter.png" id="twitter"> 
+                        <img src="img/github.png" id="github">
+                    </div>
+                    <div>
+                        <p id="p_twt">Not Available</p>
+                        <p id="github">@Github</p>
+                    </div>
+                </div>
+            </div>
+        
+    </main>
+
+</body>
+</html>

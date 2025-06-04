@@ -1,0 +1,284 @@
+body {
+    background-color: #141d2f;
+    color: #f6f8ff;
+    font-family: "Space Mono";
+    padding-bottom: 100px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 470px;
+    padding-top: 100px;
+}
+
+header h1 {
+    margin-left: 200px;
+}
+
+#ensemble_dark {
+    display: flex;
+}
+
+#ensemble_dark p {
+    margin-top: 20px;
+    color: #fefefe;
+    font-weight: bold;
+   
+}
+
+#ensemble_dark p:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+input {
+    background-color: #1e2a47;
+    color: #f6f8ff;
+    padding: 10px;
+    align-items: center;
+    border: none;
+    margin-top: 6px;
+    font-family: "Space Mono";
+}
+
+input::placeholder {
+    font-family: "Space Mono";
+}
+
+#erreur {
+    color: red;
+     display: none;
+      margin-left: 10px;
+       font-weight: bold;
+}
+
+#recherche {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1e2a47;
+    border-color: #1e2a47;
+    border-radius: 10px;
+    margin-left: 275px;
+    margin-right:275px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+button {
+    background-color: #0079ff;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Space Mono";
+    border: none;
+}
+
+button:hover {
+    opacity: 0.5;
+}
+
+#lune {
+    width: auto;
+    height: 20%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#loupe {
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 6px;
+}
+
+#total {
+    margin-top: 20px;
+    background-color: #1e2a47;
+    border-color: #1e2a47;
+    border-radius: 10px;
+    margin-left: 275px;
+    margin-right:275px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#profil {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pdp {
+    width: auto;
+    height: 100px;
+    margin-top: 20px;
+}
+
+#pseudo {
+    margin-right: 20px;
+}
+
+#profil #pseudo p {
+    color: #0079ff;
+}
+
+#profil #pseudo #bio {
+    color: #697c9a;
+}
+
+#profil p {
+    margin-right: 20px;
+    color: #697c9a;
+}
+
+#suivis {
+    margin-left: 170px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    background-color: #141d2f;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+}
+
+#suivis p {
+    color: #697c9a;
+}
+
+#lien {
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fefefe;
+}
+
+#lien #icones {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#lien img {
+    width: 25px;
+    height: auto;
+}
+
+#lien p {
+    margin-left: 20px;
+}
+
+#lien #p_twt {
+    color: #697c9a;
+}
+
+#lien #milieu {
+    margin-right: 40px;
+}
+
+#lien #maps, #lien #twitter {
+    margin-top: 10px;
+}
+#lien #maps {
+    height: auto;
+    width: 20px;
+}
+
+#lien a {
+    margin-right: 40px;
+    margin-left: 20px;
+    color: #fefefe;
+    text-decoration: none;
+}
+
+#lien a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 20px;
+        gap: 0;
+        padding-top: 50px;
+    }
+
+    header h1 {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+    #recherche {
+        margin: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    #total {
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #profil {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #pseudo {
+        margin-right: 0;
+    }
+
+    #suivis {
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    #lien {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        gap: 10px;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    #lien #icones {
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    #lien #milieu {
+        margin: 0;
+    }
+
+    #lien p,
+    #lien a {
+        margin-left: 0;
+        font-size: 0.9rem;
+        word-break: break-word;
+    }
+
+    #pdp {
+        height: 80px;
+    }
+}
